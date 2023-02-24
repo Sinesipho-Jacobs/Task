@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Demo 01</title>
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/responsive-demo-01.css" rel="stylesheet" />
+    <script>
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == "block") e.style.display = "none";
+        else e.style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <img
+            src="http://www.technologyuk.net/assets/demoimages/responsive-demo-01-logo.gif"
+            alt="Site Logo"
+          />
+        </div>
+        <div class="search">
+          <form>
+            <input type="search" placeholder="Search the site..." />
+            <button>Search</button>
+          </form>
+        </div>
+      </header>
+      <div class="bar">
+        <nav>
+          <div class="topnav_home">
+            <a href="#"
+              ><img
+                src="http://www.technologyuk.net/assets/demo-images/responsivedemo-home.gif"
+                alt="Home"
+            /></a>
+          </div>
+          <div class="topnav">
+            <span>
+              <a class="dead">Home</a>
+              <a href="#">Page 01</a>
+              <a href="#">Page 02</a>
+              <a href="#">Page 03</a>
+              <a href="#">Page 04</a>
+              <a href="#">Page 05</a>
+            </span>
+          </div>
+          <div class="topnav_menu">
+            <a
+              href="#"
+              onClick='toggle_visibility("MobileMenu"); 
+return false;'
+              ><img
+                src="http://www.technologyuk.net/assets/demoimages/responsive-demo-menu.gif"
+                alt="Menu"
+            /></a>
+          </div>
+        </nav>
+      </div>
+      <nav id="MobileMenu">
+        <ul class="mobile_menu">
+          <li class="dead"><a>Home</a></li>
+          <li><a href="#">Page 01</a></li>
+          <li><a href="#">Page 02</a></li>
+          <li><a href="#">Page 03</a></li>
+          <li><a href="#">Page 04</a></li>
+          <li><a href="#">Page 05</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>Main Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit
+          libero sit amet nunc ultricies, eu feugiat diam placerat. Phasellus
+          tincidunt nisi et lectus pulvinar, quis tincidunt lacus viverra.
+          Phasellus in aliquet massa. Integer iaculis massa id dolor venenatis
+          scelerisque. Morbi non eros a ex interdum molestie in eget leo. Proin
+          pulvinar facilisis eros, sed porta ante imperdiet ut. Suspendisse
+          tincidunt facilisis metus non faucibus. Integer posuere vehicula
+          congue. Sed pharetra felis sapien, at imperdiet diam lacinia quis. Sed
+          pharetra turpis et dui aliquam, in rhoncus elit ornare. Quisque
+          posuere consequat nunc in rutrum. Praesent leo nibh, porta et arcu
+          quis, placerat tincidunt turpis.
+        </p>
+        <br />
+      </div>
+      <footer>
+        <a href="#">Sitemap</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>
